@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+    
+    <title>Js Final Project</title>
+</head>
+<body>
+ 
+    <!-- NavBar start------------ -->
+    <header>
+        <nav class="navbar">
+          <div class="headingsLinks">
+                <a href= './index.html'id="logo" style="text-decoration: none; color: rgb(55, 91, 209);"><span>Doctor</span>Appointment</a>
+                <div class="sectionTitle">
+                    <a href="#sector-clothing">Doctors</a>
+                </div>
+                <div class="sectionTitle">
+                    <a href="#sector-accessories">Doctor Details</a>
+                </div>
+                <div class="sectionTitle">
+                  <a href="#sector-accessories">Appointment</a>
+              </div>
+          </div>
+  
+          <div id="input-wrapper">
+            <i class="fas fa-search"></i>
+            <input
+              id="search-box"
+              type="text"
+              name="search"
+              placeholder="Search for doctors"
+            />
+          </div>
+          <div id="count-wrapper">
+           
+  
+            <div class="profile-wrapper">
+              <div id="profile-back-screen">
+                <img width="40px" class ="profile-pic" src="photo1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+    <!-- Crousel start--------------- -->
+    <section id="carousel-wrapper">
+        <div id="owl-carousel" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="image 1.png" alt=" picture 1 " />
+          </div>
+          <div class="item">
+            <img src="image 2.png" alt=" picture 2 " />
+          </div>
+          <div class="item">
+            <img src="image 3.png" alt=" picture 3" />
+          </div>
+          <div class="item">
+            <img src="image 4.png" alt=" picture 4" />
+          </div>
+        </div>
+      </section>
+    <!-- Main Card Section start------------------->
+    <section>
+      <div id="mainSection">
+        <section id="indexWrapper">
+          <div id="sector-clothing" width="100%">
+
+            <div id="clothing">
+              <h2 class="headding">Doctors</h2>
+              <div class="row">
+  <div class="column">
+    <img src="45.jpeg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="46.jpeg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="47.jpeg" alt="Mountains" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="48.jpeg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+            </div>
+          </div>
+          <div id="sector-accessories" style="width: 100%; margin: 1px ">
+
+            <div id="accessories">
+              
+              <h2 class="headding">Appointment</h2><br>
+              
+              <div class="container">
+  <form>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="number">Mobile Number</label>
+    </div>
+    <div class="col-75">
+      <input type="mobile" id="number" name="number" placeholder="Your mobile number..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+          </div>
+          
+      </section>
+    </div>
+    </section> -->
+   
+    <!-- Footer start------------------>
+    
+    <footer>
+        <div>
+          <p>Products</p>
+          <a href="#">Trust center</a>
+          <a href="#">Professional services</a>
+          <a href="#">Room management</a>
+          <a href="#">Training</a>
+        </div>
+        <div>
+          <p>Helpful Links</p>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <p>Partners</p>
+          <a href="#">Zara</a>
+          <a href="#">Pantaloons</a>
+          <a href="#">Levis</a>
+          <a href="#">UCB</a>
+          <a href="#">+ Many More</a>
+        </div>
+        <div>
+          <p>Address</p>
+          <a href="#">Building 101</a>
+          <a href="#">Central Avenue</a>
+          <a href="#">LA - 902722</a>
+          <a href="#">United States</a>
+        </div>
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./script.js"></script>
+      
+</body>
+</html>
